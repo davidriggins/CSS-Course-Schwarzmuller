@@ -10,8 +10,11 @@ body {
 .main-header {
     background: #2ddf5c;
     width: 100%;
+    top: 0;
+    left: 0;
     position: fixed;
     padding: 8px 16px;
+    z-index: 1;
 }
 
 /* direct div child */
