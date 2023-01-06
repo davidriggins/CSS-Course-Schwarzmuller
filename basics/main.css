@@ -79,3 +79,17 @@ body {
     color: white;
     border-bottom: 5px solid white;
 }
+
+.main-name__item--cta a {
+    color: white;
+    background: red;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-name__item--cta a:hover,
+.main-name__item--cta a:active {
+    color: red;
+    background: white;
+    border: none;
+}
