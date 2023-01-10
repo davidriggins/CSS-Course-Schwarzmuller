@@ -255,3 +255,17 @@ Units
 		html {
 			font-size: 75%;  /* 75% of browser settings */
 		}
+		
+	- Which Unit Should You Choose:
+		Property					Recommended Unit
+		--------------------------------------------
+		font-size (root element)	%
+		font-size					rem
+		padding, margin				rem
+		border						px
+		width, height				%, vw, vh
+		top, bottom, left, right	%
+	
+	- Auto to Center elements
+		- margin: auto; only works with block level elements with an 
+		  explicitly assigned width
