@@ -211,6 +211,7 @@ Units
 		em - em
 		viewport height - vh
 		viewport width - vw
+		auto
 		
 	- Where units matter:
 		font-size
