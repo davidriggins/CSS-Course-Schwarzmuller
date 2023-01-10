@@ -241,7 +241,7 @@ Units
 		
 		Percentage:
 				%
-	3 Rules to Remember
+	- 3 Rules to Remember
 		- % and position:fixed ==>
 			- The containing block is the viewport.
 		- % and position:absolute ==>
@@ -250,4 +250,8 @@ Units
 		- % and position:static or position:relative ==>
 			- The containing block is the closest ancestor that is block level.
 			  (ancestor's content only).
-	
+
+	- Defining the font size in root elements:
+		html {
+			font-size: 75%;  /* 75% of browser settings */
+		}
