@@ -285,6 +285,3 @@ Font Display
 			fallback
 			optional
 			auto (default): browser will choose an option of its choice
-			
-Flex
-	- 
