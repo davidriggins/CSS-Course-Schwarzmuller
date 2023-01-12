@@ -275,4 +275,13 @@ Units
 Font Shorthand
 	- Format:
 		font: font-style font-variant font-weight Req:font-size/line-height Req:font-family
+		font: italic small-caps 700 1.2rem/2 "AnonymousPro", sans-serif;
 		
+Font Display
+	- Loading perfomance of fonts.
+		- Acceptable values:
+			swap
+			block
+			fallback
+			optional
+			auto (default): browser will choose an option of its choice
