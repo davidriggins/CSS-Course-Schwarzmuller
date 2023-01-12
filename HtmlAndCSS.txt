@@ -270,3 +270,9 @@ Units
 	- Auto to Center elements
 		- margin: auto; only works with block level elements with an 
 		  explicitly assigned width
+		  
+		  
+Font Shorthand
+	- Format:
+		font: font-style font-variant font-weight Req:font-size/line-height Req:font-family
+		
