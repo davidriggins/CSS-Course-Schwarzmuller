@@ -355,9 +355,3 @@ Grid
 		- display: grid;
 		- grid-template-columns: 200px 2fr 20% 1fr;
 		- grid-template-rows: 5rem 2.5rem;
-	
-	Grid Elements:
-		- grid-column-start: 3;
-		- grid-column-end: 5;
-		- grid-row-start: 1;
-		- grid-row-end: 3;
