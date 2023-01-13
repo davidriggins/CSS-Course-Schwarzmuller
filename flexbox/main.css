@@ -74,6 +74,7 @@ body {
     margin: 10px;
     width: 350px;
     /* flex-grow: 1; */
+    flex-shrink: 1;
 }
 
 .item-6 {
@@ -85,4 +86,5 @@ body {
     width: 350px;
     /* order: -2; */
     /* flex-grow: 4; */
+    flex-shrink: 4;
 }
