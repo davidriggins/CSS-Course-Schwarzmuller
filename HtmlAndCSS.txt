@@ -337,9 +337,16 @@ Flexbox
 		justify-content: defines the positioning of the elements along the main axis
 			- center;
 			
-		align-content:
+		align-content: defines behavior along the cross axis
 			- center;
 			- space-between;
 			- flex-start;
 			
 	- Flex Items
+		order: 			allows you to change order of an item.
+		align-self: 	allows you to align an flex item.
+		flex-grow:	
+		flex-shrink:	
+		flex-basis:
+		flex: 			shorthand
+	
