@@ -286,5 +286,59 @@ Font Display
 			optional
 			auto (default): browser will choose an option of its choice
 			
-Flex
-	- 
+Flexbox
+	- Allows us to change the way our elements are displayed.
+	- To add flexbox capability, we need to change our display property.
+		- display: flex;
+	- We create a Flex Container containing Flex Items
+	- Once we have turned our elements into a "flex construct", we can apply
+	  different properties to both the flex container and flex items:
+		
+			Parent (Flex container)		Children (Flex items)
+			--------------------------------------------------
+			flex-flow:					order:
+			justify-content:			flex:
+			align-content:				align-self:
+			align-items:
+			
+	- Flex Container:
+		display: flex;
+			- Flex items are displayed in one row.
+			- Height is defined by the largest height of flex items, or by content.
+			- On decreasing the window size, the content width decreases to
+			  the size that is needed for the content.
+			  
+		display: inline-flex;
+			- Flex items are displayed in one row.
+			- Height is defined by the largest height of flex items, or by content.
+			- On decreasing the window size, the content width remains the same.
+
+		flex-direction: 
+			- row;			(default) row direction
+			- column;		column direction
+			- row-reverse;
+			- col-reverse;
+			
+		flex-wrap: 
+			- no-wrap;		(default) 
+			- wrap;
+			- wrap-reverse;
+			
+		flex-flow: flex-direction flex-wrap
+		flex-flow: row wrap;
+		
+		align-items: defines the positioning of the elements along the cross axis
+			- stretch; 		(default)
+			- center;		Centers items along cross-axis
+			- flex-start;
+			- flex-end;
+			- baseline;
+			
+		justify-content: defines the positioning of the elements along the main axis
+			- center;
+			
+		align-content:
+			- center;
+			- space-between;
+			- flex-start;
+			
