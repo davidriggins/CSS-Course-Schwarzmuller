@@ -359,6 +359,6 @@ Grid
 	
 	Grid Elements:
 		- grid-column-start: 3;
-		- grid-column-end: 5;
+		- grid-column-end: 5; or grid-column-end: span 2;
 		- grid-row-start: 1;
 		- grid-row-end: 3;
