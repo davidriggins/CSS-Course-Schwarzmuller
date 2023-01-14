@@ -377,3 +377,11 @@ Grid
 		
 		grid-area: row start / col start / row end / col end;
 		grid-area: row-1-start / 2 / row-2-end / span 3;
+		
+	Setting Gaps:
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+		
+		grid-gap: row-gap col-gap;
+		grid-gap: 10px 20px;
+		
