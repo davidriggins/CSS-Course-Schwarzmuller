@@ -472,5 +472,78 @@ Naming Classes:
 	BEM (Block Element Modifier) styles:
 		.BLOCK__ELEMENT--MODIFIER
 		.main-menu__item--size-big
+		.button--success
 		
+		
+Sass
+	.sass extension -
+		does not use {} or ;
+	.scss extension -
+		does use CSS syntax. Allows nesting
+	
+	- You must compile your sass files before production:
+		sass scss-file css-file
+		sass main.scss main.css
+		
+	- You can consitenly compile:
+		sass --watch main.scss:main.css
+	
+	- Items from the same rule, you can nest the properties:
+		// flex-direction: column;
+		// flex-wrap: nowrap;
+		flex: {
+			direction: column;
+			wrap: nowrap;
+		}
+		
+	- Variables:
+		Define variables at the top:
+			$main-color: #521751;
+			
+			border: 0.5rem solid $main-color;
+			
+		For Lists:
+			$border-default: 0.05rem solid $main-color;
+			
+		For mapping:
+			$colors: (
+				main: #521751,
+				secondary: #fa923f,
+			);
+			
+			$border-default: 0.05rem solid map-get($colors, main);
+			
+	- Built in Functions.
+		background: lighten(map-get($colors, main), 72%);
+		
+	- Arithmatic
+		$size-default: 1rem;
+		$size-tiny: 0.2rem;
+		
+		padding: $size-default * 3 0;
+		box-shadow: 0.2rem 0.2rem calc($size-tiny / 2) #ccc;
+	
+	- Partials
+		- Create a partial with _
+			_variables.scss
+				Copied all of the sass variables into it.
+				Reference it in scss files that use it via import.
+	- Inheritance
+		- Originally, these items in were common among other items:
+			.sass-section {
+				border: $border-default;
+				background: lighten(map-get($colors, main), 72%);
+				padding: $size-default * 2;
+				text-align: center;
+				width: 90%;
+				box-sizing: border-box;
+			}
+			
+		- Then can be used in other classes:
+			.sass-introduction {
+				@extend .sass-section;
+				box-shadow: 0.2rem 0.2rem calc($size-tiny / 2) #ccc;
+			}
+			
+	- Mixins: reusable custom functions
 	
