@@ -410,8 +410,21 @@ Grid
 		grid-template-rows: 3.5rem auto fit-content(8rem);
 		
 	Positioning Grid Elements:
-		On container:
+		On container for rows:
 			justify-content: center;  positions elements in center
 			justify-content: start;
 			justify-content: end;
+			justify-content: stretch;  this is the default
+		On container for columns:
+			align-items: center;  elements are vertically centered
+			align-items: start;
+			align-items: end;
+			align-items: stretch; this is the default.
+			
+	Positioning Entire Grid:
+		Postioning on x-axis:
+			justify-content: center; 
+			justify-content: start;  This is the default
+			justify-content: end;
+			justify-content: stretch;  Doesn't fill entire area because doesn't override row and column settings.
 			
