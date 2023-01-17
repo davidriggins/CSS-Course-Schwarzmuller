@@ -422,9 +422,20 @@ Grid
 			align-items: stretch; this is the default.
 			
 	Positioning Entire Grid:
-		Postioning on x-axis:
+		On Container Postioning on x-axis:
 			justify-content: center; 
 			justify-content: start;  This is the default
 			justify-content: end;
 			justify-content: stretch;  Doesn't fill entire area because doesn't override row and column settings.
 			
+		On Container Postioning on y-axis:
+			align-content: center; 
+			align-content: start;  This is the default
+			align-content: end;
+			align-content: stretch;  Doesn't fill entire area because doesn't override row and column settings.
+		
+	Positioning Elements individually:
+		On element Positioning on the x-axis:
+			justify-self: center;
+			
+			align-self: center;
