@@ -396,3 +396,11 @@ Grid
 			grid-area: main;
 			
 			grid-area: header;
+
+		You can automatically generate the grid areas by using -start and -end
+			In the container:
+				grid-template-columns: [hd-start] repeat(4, [col-start] 25% [col-end]) [hd-end];
+				grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, 200px) [row-2-end row-3-start] 100px [row-3-end];
+		
+			In the element:
+				grid-area: hd;
