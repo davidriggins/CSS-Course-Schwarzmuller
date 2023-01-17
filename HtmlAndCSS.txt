@@ -444,3 +444,6 @@ Grid
 		grid-template-columns: repeat(auto-fill, 10rem);
 		
 		grid-template-columns: repeat(auto-fit, 10rem);
+		
+	Overridding the DOM default and filling empty cells:
+		grid-auto-flow: row dense;
