@@ -308,6 +308,11 @@ Flexbox
 			- On decreasing the window size, the content width decreases to
 			  the size that is needed for the content.
 			  
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+			  
 		display: inline-flex;
 			- Flex items are displayed in one row.
 			- Height is defined by the largest height of flex items, or by content.
@@ -451,3 +456,23 @@ Grid
 Grid vs Flexbox:
 	- Using one dimension - use flexbox.
 	- Using two dimensions - use grid.
+	
+CSS Variables:
+	- Generally defined in :root { }
+	- Define the variable via --variable-name
+		- --my-color: #fa923f;
+	- Use the varialbe via var(--variable-name);
+		- color: var(--my-color);
+	- Can use a fallback value in case the variable is not defined:
+		- color: var(--my-color, #fa923f);
+	
+Naming Classes:
+	Use kebab-case: because CSS is case insensitive.
+	Name your clases by feature.
+	BEM (Block Element Modifier) styles:
+		.BLOCK__ELEMENT--MODIFIER
+		.main-menu__item--size-big
+		.button--success
+		
+		
+	
