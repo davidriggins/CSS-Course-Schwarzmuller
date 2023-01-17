@@ -385,3 +385,14 @@ Grid
 		grid-gap: row-gap col-gap;
 		grid-gap: 10px 20px;
 		
+	Grid Template Areas:
+		Template definition in container
+			grid-template-areas:
+			"header header header header"
+			"side side main main"
+			"footer footer footer footer";
+			
+		Template reference in grid elements:
+			grid-area: main;
+			
+			grid-area: header;
