@@ -404,3 +404,14 @@ Grid
 		
 			In the element:
 				grid-area: hd;
+				
+		fit-content(default-size) - will fit the content to fill the area, defaults
+									to default-size.
+		grid-template-rows: 3.5rem auto fit-content(8rem);
+		
+	Positioning Grid Elements:
+		On container:
+			justify-content: center;  positions elements in center
+			justify-content: start;
+			justify-content: end;
+			
