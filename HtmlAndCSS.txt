@@ -447,3 +447,7 @@ Grid
 		
 	Overridding the DOM default and filling empty cells:
 		grid-auto-flow: row dense;
+		
+Grid vs Flexbox:
+	- Using one dimension - use flexbox.
+	- Using two dimensions - use grid.
